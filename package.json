@@ -1,10 +1,11 @@
 {
   "name": "dummylib",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name dummylib src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -38,5 +39,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "main": "./dist/dummylib.common.js",
+  "files": [
+    "dist/*"
   ]
 }
