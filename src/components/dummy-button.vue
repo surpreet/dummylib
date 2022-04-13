@@ -4,6 +4,7 @@
   </div>
 </template>
 <script>
+// Test comment
 export default {
   data() {
     return {
